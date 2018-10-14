@@ -85,7 +85,7 @@ footer {
 }
 
 .search-loading {
-    background: transparent url('img/loading.svg') no-repeat center center;
+    background: transparent url('../loading.svg') no-repeat top center;
 }
 
 .buttons {
@@ -104,16 +104,13 @@ footer {
     cursor: pointer;
 }
 
-    .button:hover {
-        border: 1px solid var(--dark-font-color);
-        background-color: var(--dark-font-color);
-    }
+.button:hover {
+    border: 1px solid var(--dark-font-color);
+    background-color: var(--dark-font-color);
+}
 
 .button-icon {
     padding-left: 8px;
-}
-
-.button-text {
 }
 
 button:hover {
@@ -139,7 +136,7 @@ button:hover .fa {
 /* Maps */
 
 .map-loading {
-    background: transparent url('img/loading.svg') no-repeat center center;
+    background: transparent url('../loading.svg') no-repeat top center;
     width: 100%;
     height: var(--main-element-height);
 }
