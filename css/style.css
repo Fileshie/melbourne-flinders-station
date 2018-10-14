@@ -85,7 +85,7 @@ footer {
 }
 
 .search-loading {
-    background: transparent url(/img/loading.svg) no-repeat center center;
+    background: transparent url('loading.svg') no-repeat center center;
 }
 
 .buttons {
