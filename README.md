@@ -7,4 +7,4 @@ Restaurants, Cafés &amp; Entertainment near Melbourne's Flinders Street Station
 - All data is sourced via the Google places API
 - Both JQuery and the Knockout.js framework was used to create this app
 
-(https://fileshie.github.io/melbourne-flinders-station/hero.JPG)
+![](https://fileshie.github.io/melbourne-flinders-station/hero.JPG)
