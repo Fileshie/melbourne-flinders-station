@@ -85,7 +85,7 @@ footer {
 }
 
 .search-loading {
-    background: transparent url('/img/loading.svg') no-repeat center center;
+    background: transparent url('img/loading.svg') no-repeat center center;
 }
 
 .buttons {
@@ -139,7 +139,7 @@ button:hover .fa {
 /* Maps */
 
 .map-loading {
-    background: transparent url('/img/loading.svg') no-repeat center center;
+    background: transparent url('img/loading.svg') no-repeat center center;
     width: 100%;
     height: var(--main-element-height);
 }
