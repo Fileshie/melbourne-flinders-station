@@ -1,5 +1,5 @@
 # Things to do near Flinders Street Station 
-#Restaurants, Cafés &amp; Entertainment near Melbourne's Flinders Street Station.
+Restaurants, Cafés &amp; Entertainment near Melbourne's Flinders Street Station.
 
 ## Info about the app
 
