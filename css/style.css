@@ -1,0 +1,238 @@
+
+/* Custom styles */
+
+:root {
+    --primary-color: #4BADD4;
+    --font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+    --dark-font-color: #606366;
+    --poi-font-color: #d1d1d1;
+    --main-element-height: 900px;
+}
+
+html,
+body {
+    font-family: var(--font-family);
+    height: 100%;
+}
+
+footer {
+    background-color: #f4f4f4;
+    min-height: 180px;
+    text-align: center;
+    padding-top: 60px;
+    color: var(--primary-color);
+}
+
+/* nav bar */
+.main-heading {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 40px 0px 10px 0px;
+}
+
+.sub-header {
+    padding-top: 16px;
+}
+
+#poi-search-wrapper {
+    padding: 20px 0px;
+}
+
+.navmenu-default {
+    padding: 0px 10px;
+}
+
+.navbar-default {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.navbar-toggle {
+    float: left;
+    margin-left: 30px;
+    display: block;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    opacity: 0.6;
+    background-color: var(--primary-color);
+}
+
+/*Search box */
+
+.search {
+    margin: auto;
+    width: 860px;
+    padding: 20px 0px;
+}
+
+.search-row {
+    display: flex;
+    align-items: center;
+}
+
+.search-box {
+    border-radius: 18px;
+    border: none;
+    padding: 10px 12px;
+    width: 100%;
+    color: var(--dark-font-color);
+}
+
+.search-loading {
+    background: transparent url(/img/loading.svg) no-repeat center center;
+}
+
+.buttons {
+    margin-bottom: 10px;
+}
+
+.button {
+    border: 1px solid #fff;
+    padding: 8px 16px;
+    border-radius: 18px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+    .button:hover {
+        border: 1px solid var(--dark-font-color);
+        background-color: var(--dark-font-color);
+    }
+
+.button-icon {
+    padding-left: 8px;
+}
+
+.button-text {
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: var(--primary-color);
+}
+
+button .fa {
+    color: white;
+}
+
+button:hover .fa {
+    color: var(--primary-color);
+}
+
+#search-container {
+    padding: 0;
+    height: var(--main-element-height);
+    overflow-y: scroll;
+    background-color: #fff;
+}
+
+/* Maps */
+
+.map-loading {
+    background: transparent url(/img/loading.svg) no-repeat center center;
+    width: 100%;
+    height: var(--main-element-height);
+}
+
+#map-container {
+    padding: 0;
+}
+
+#map {
+    height: var(--main-element-height);
+}
+
+#googleMaps {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+/* List */
+
+#locations-list {
+}
+
+.single-list {
+    cursor: pointer;
+    padding: 4px 1px;
+    color: #35557a;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.place-item-text {
+    padding: 0px 20px;
+}
+
+.place-item-icon {
+    width: 30px;
+    height: 26px;
+    margin-left: 20px;
+}
+
+.fa-star {
+    color: var(--primary-color);
+}
+
+.single-list:hover {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+/* Info Window */
+.place-title {
+    font-weight: 600;
+    padding-bottom: 8px;
+}
+
+.place-info {
+    font-weight: 500;
+    width: 400px;
+    word-spacing: 1.2px;
+    letter-spacing: 0.6px;
+}
+
+.place-hero {
+    text-align: center;
+}
+
+.place-hero img {
+    width: 400px;
+    max-height: 200px;
+    box-shadow: 0 2px 16px 0 rgba(81, 91, 102, 0.2);
+}
+
+.place-info-item {
+    padding: 5px 0px;
+}
+
+.review {
+    font-style: italic;
+}
+
+
+.marker-wrapper {
+    font-family: var(--font-family);
+    letter-spacing: 0.3px;
+    word-spacing: 1px;
+    padding: 10px 6px;
+    color: var(--dark-font-color);
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+    .navbar-toggle {
+        display: inherit;
+    }
+}

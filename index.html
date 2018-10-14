@@ -1,0 +1,89 @@
+﻿<!doctype HTML>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Melbourne's Flinders Streeet Station Points of Interest</title>
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet prefetch" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="//fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+
+</head>
+
+<body id="google-places-melbourne-poi-app">
+    <nav class="main-heading">
+        <h1>Things to do near Flinders Street Station</h1>
+        <p class="sub-header">
+            Restaurants, Cafés &amp; Entertainment near Melbourne's Flinders Street Station.
+        </p>
+
+        <div class="search" id="search">
+            <div class="row search-row">
+                <div class="col-md-8">
+                    <input class="search-box" id="search-box" placeholder="Search and filter places based on name..." data-bind="textInput: searchTerm, event: { keypress: onEnterSearch }" />
+                </div>
+
+                <div class="col-md-2">
+                    <div class="button" data-bind="click: search">
+                        <span class="button-text">Search</span>
+                        <span class="button-icon">
+                            <i class="fa fa-search"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="button" data-bind="click: reset">
+                        <span class="button-text">Reset</span>
+                        <span class="button-icon">
+                            <i class="fa fa-undo"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div id="search-container" class="col-md-4" data-bind="css: { 'search-loading': !isListPlacesLoaded() }">
+                <div id="poi-search-wrapper">
+                    <div class="search-list-container">
+                        <div id="locations-list">
+                            <div data-bind="foreach: filteredMarkersArray">
+                                <div class="single-list" data-bind="click: $parent.markerSelected">
+                                    <img class="place-item-icon" data-bind="attr:{src: details.icon}" />
+                                    <div class="place-item-text" data-bind="text: title"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="map-container" class="col-md-8">
+                <div class="map-loading">
+                    <div id="map" data-bind="style: { display: isListPlacesLoaded() ? 'block' : 'none', height: '900px' }">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h4>&copy; Fileshie Tirubeni 2018</h4>
+    </footer>
+    <script src="js/knockout-3.4.2.js"></script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaw1BJdq_SyxRs8N2rQGCfKf8ZiVCEiHk&libraries=places&v=3&callback=initMap"
+            onerror="handleGoogleMapError()">
+    </script>
+</body>
+
+</html>
